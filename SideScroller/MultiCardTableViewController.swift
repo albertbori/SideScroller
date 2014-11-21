@@ -37,14 +37,13 @@ import Foundation
             var bottomMargin = indexPath.row == 11 ? "-" : ""
             //Add vertical constraints (standard margins) for each card
             var constraints = NSLayoutConstraint.constraintsWithVisualFormat("V:|-[card]\(bottomMargin)|", options: nil, metrics: nil, views: ["card": card])
-            constraints = NSLayoutConstraint.constraintsWithVisualFormat("V:|-[card2]\(bottomMargin)|", options: nil, metrics: nil, views: ["card2": card2])
+            constraints += NSLayoutConstraint.constraintsWithVisualFormat("V:|-[card2]\(bottomMargin)|", options: nil, metrics: nil, views: ["card2": card2])
             //Add horizontal constraints that tie the cards together, and to the super view
             constraints += NSLayoutConstraint.constraintsWithVisualFormat("H:|-[card]-(16)-[card2]-|", options: nil, metrics: nil, views: ["card": card, "card2": card2])
             //Add horizontal constraint that disambiguates individual card width
             constraints += NSLayoutConstraint.constraintsWithVisualFormat("H:[card(==card2)]", options: nil, metrics: nil, views: ["card": card, "card2": card2])
-            //constraints += NSLayoutConstraint.constraintsWithVisualFormat("V:[card(==card2)]", options: nil, metrics: nil, views: ["card": card, "card2": card2])
             cell.scrollContentView.addConstraints(constraints)
-                
+            
             //Set the scrollview content horizontal size constraint to double the window width (1 window width for each card)
             cell.contentWidthConstraint.constant = self.tableView.frame.width * 2
             

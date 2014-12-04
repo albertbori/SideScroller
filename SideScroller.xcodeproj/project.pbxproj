@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		700684641A30249500845BFF /* CardCollectionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 700684631A30249500845BFF /* CardCollectionController.swift */; };
+		700684661A30271300845BFF /* CollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 700684651A30271300845BFF /* CollectionCell.swift */; };
+		7006846D1A302AC700845BFF /* CollectionCardCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7006846B1A302AC700845BFF /* CollectionCardCell.swift */; };
+		7006846E1A302AC700845BFF /* CollectionCardCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7006846C1A302AC700845BFF /* CollectionCardCell.xib */; };
 		70358D4C1A1C55BF00535825 /* CardTableController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70358D4B1A1C55BF00535825 /* CardTableController.swift */; };
 		705B638B1A1E722700CDF87B /* CardView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 705B638A1A1E722700CDF87B /* CardView.xib */; };
 		705B638D1A1E724800CDF87B /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 705B638C1A1E724800CDF87B /* CardView.swift */; };
@@ -31,6 +35,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		700684631A30249500845BFF /* CardCollectionController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardCollectionController.swift; sourceTree = "<group>"; };
+		700684651A30271300845BFF /* CollectionCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectionCell.swift; sourceTree = "<group>"; };
+		7006846B1A302AC700845BFF /* CollectionCardCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectionCardCell.swift; sourceTree = "<group>"; };
+		7006846C1A302AC700845BFF /* CollectionCardCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CollectionCardCell.xib; sourceTree = "<group>"; };
 		70358D4B1A1C55BF00535825 /* CardTableController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardTableController.swift; sourceTree = "<group>"; };
 		705B638A1A1E722700CDF87B /* CardView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CardView.xib; sourceTree = "<group>"; };
 		705B638C1A1E724800CDF87B /* CardView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
@@ -71,6 +79,7 @@
 			children = (
 				70358D4B1A1C55BF00535825 /* CardTableController.swift */,
 				7067F70F1A1E8C210082A512 /* MultiCardTableViewController.swift */,
+				700684631A30249500845BFF /* CardCollectionController.swift */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -81,6 +90,9 @@
 				705B638A1A1E722700CDF87B /* CardView.xib */,
 				705B638C1A1E724800CDF87B /* CardView.swift */,
 				705B638E1A1E73AA00CDF87B /* CardCell.swift */,
+				700684651A30271300845BFF /* CollectionCell.swift */,
+				7006846B1A302AC700845BFF /* CollectionCardCell.swift */,
+				7006846C1A302AC700845BFF /* CollectionCardCell.xib */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -223,6 +235,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7006846E1A302AC700845BFF /* CollectionCardCell.xib in Resources */,
 				70BA1B871A1C53F400468810 /* Main.storyboard in Resources */,
 				70BA1B8C1A1C53F400468810 /* LaunchScreen.xib in Resources */,
 				70BA1B891A1C53F400468810 /* Images.xcassets in Resources */,
@@ -244,11 +257,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7006846D1A302AC700845BFF /* CollectionCardCell.swift in Sources */,
 				705B638F1A1E73AA00CDF87B /* CardCell.swift in Sources */,
 				7067F7101A1E8C210082A512 /* MultiCardTableViewController.swift in Sources */,
 				70BA1B841A1C53F400468810 /* ViewController.swift in Sources */,
+				700684661A30271300845BFF /* CollectionCell.swift in Sources */,
 				70BA1B821A1C53F400468810 /* AppDelegate.swift in Sources */,
 				70358D4C1A1C55BF00535825 /* CardTableController.swift in Sources */,
+				700684641A30249500845BFF /* CardCollectionController.swift in Sources */,
 				705B638D1A1E724800CDF87B /* CardView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

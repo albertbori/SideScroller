@@ -12,9 +12,22 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="n0k-1e-mvU">
-                    <rect key="frame" x="8" y="8" width="301" height="108"/>
+                    <rect key="frame" x="8" y="63" width="301" height="53"/>
                     <string key="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis dignissim vestibulum nisl non scelerisque. Proin et odio neque. Donec malesuada quam eu pellentesque venenatis.</string>
-                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="me" translatesAutoresizingMaskIntoConstraints="NO" id="95I-OH-6ad">
+                    <rect key="frame" x="8" y="8" width="47" height="47"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="47" id="6Ip-DV-6n4"/>
+                        <constraint firstAttribute="width" constant="47" id="ZmY-RU-Ybt"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Lorem ipsum dolor sit amet, consectetur adipiscing" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lRn-PM-W9z">
+                    <rect key="frame" x="63" y="8" width="246" height="47"/>
+                    <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
                     <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                     <nil key="highlightedColor"/>
                 </label>
@@ -23,11 +36,20 @@
             <constraints>
                 <constraint firstItem="n0k-1e-mvU" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leadingMargin" id="2YN-NV-geu"/>
                 <constraint firstItem="n0k-1e-mvU" firstAttribute="bottom" secondItem="iN0-l3-epB" secondAttribute="bottomMargin" id="3aL-Ow-uwL"/>
+                <constraint firstItem="lRn-PM-W9z" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="8" id="DcJ-Ji-Qp5"/>
                 <constraint firstItem="n0k-1e-mvU" firstAttribute="trailing" secondItem="iN0-l3-epB" secondAttribute="trailingMargin" id="FeN-E6-0jS"/>
-                <constraint firstItem="n0k-1e-mvU" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="topMargin" id="su5-SE-fIG"/>
+                <constraint firstItem="lRn-PM-W9z" firstAttribute="leading" secondItem="95I-OH-6ad" secondAttribute="trailing" constant="8" id="PES-nf-wrU"/>
+                <constraint firstAttribute="trailing" secondItem="lRn-PM-W9z" secondAttribute="trailing" constant="8" id="Sqw-Sq-Jeh"/>
+                <constraint firstItem="n0k-1e-mvU" firstAttribute="top" secondItem="95I-OH-6ad" secondAttribute="bottom" constant="8" id="XfS-6t-Exd"/>
+                <constraint firstItem="95I-OH-6ad" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="8" id="d07-yg-oR4"/>
+                <constraint firstItem="95I-OH-6ad" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="8" id="jM2-yu-dSa"/>
+                <constraint firstItem="n0k-1e-mvU" firstAttribute="top" secondItem="lRn-PM-W9z" secondAttribute="bottom" constant="8" id="pZH-AU-dnr"/>
             </constraints>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
             <point key="canvasLocation" x="-81.5" y="103"/>
         </view>
     </objects>
+    <resources>
+        <image name="me" width="130" height="130"/>
+    </resources>
 </document>
